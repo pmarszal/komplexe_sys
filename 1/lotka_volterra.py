@@ -29,8 +29,8 @@ def lotka_volterra(t, x):
 '''
 def loop_over_space():
 	vectors = []
-	for x in np.arange(0,1, 0.05):
-		for y in np.arange(0,1, 0.05):
+	for x in np.arange(0,1, 0.001):
+		for y in np.arange(0,1, 0.001):
 			vectors.append([[x,y],lotka_volterra(0,[x,y])])
 	fig = plt.figure()
 	ax = fig.add_subplot(1,1,1)
